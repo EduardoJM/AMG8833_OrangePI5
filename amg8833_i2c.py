@@ -14,7 +14,7 @@ import smbus # i2c bus
 #############################
 #
 GE_I2C_ADDRESS           = 0X69
-RPI_BUS                  = 0X01
+OPI_BUS2                 = 2
 #
 #############################
 # Base Register Addresses
@@ -95,7 +95,7 @@ class i2c_driver(object):
         return result
     
 class AMG8833(object):
-    def __init__(self,addr=GE_I2C_ADDRESS,bus_num=RPI_BUS):
+    def __init__(self,addr=GE_I2C_ADDRESS,bus_num=OPI_BUS2):
         self.device=get_i2c_device(addr,bus_num)
 
         self.set_sensor_mode(GE_PCTL_NORMAL_MODE) # set sensor mode
