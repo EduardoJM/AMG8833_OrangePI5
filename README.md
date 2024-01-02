@@ -13,18 +13,8 @@ Using the `40 Pin Expansion Interface Pin Instructions`, we have multiple i2c **
 <details>
   <summary>Click me</summary>
 
-  ### Heading
-  1. Foo
-  2. Bar
-     * Baz
-     * Qux
+  ![OrangePI5 Plus Pinout](./.github/pinout.png)
 
-  ### Some Javascript
-  ```js
-  function logSomething(something) {
-    console.log('Something', something);
-  }
-  ```
 </details>
 
 
