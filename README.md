@@ -6,16 +6,16 @@ This is a documentation of using AMG8833 infrared array on Orange PI 5 (Plus mod
 
 <!-- vscode-markdown-toc -->
 * 1. [Table Of Contents](#toc)
-* 2. [Hardware Configuration](#HardwareConfiguration)
-	* 2.1. [Wiring Diagram](#WiringDiagram)
+* 2. [Hardware Configuration](#hardware)
+	* 2.1. [Wiring Diagram](#diagram)
 		* 2.1.1. [i2c](#i2c)
-		* 2.1.2. [Power Supply](#PowerSupply)
-		* 2.1.3. [Diagram](#Diagram)
-* 3. [Software Configuration](#SoftwareConfiguration)
-	* 3.1. [Bus Number](#BusNumber)
-* 4. [Software Output](#SoftwareOutput)
-	* 4.1. [Example Output](#ExampleOutput)
-	* 4.2. [Real-Time Interpolated IR Camera](#Real-TimeInterpolatedIRCamera)
+		* 2.1.2. [Power Supply](#power)
+		* 2.1.3. [Diagram](#diagram)
+* 3. [Software Configuration](#software)
+	* 3.1. [Bus Number](#bus)
+* 4. [Software Output](#output)
+	* 4.1. [Example Output](#example)
+	* 4.2. [Real-Time Interpolated IR Camera](#interpolated)
 
 <!-- vscode-markdown-toc-config
 	numbering=true
@@ -23,9 +23,9 @@ This is a documentation of using AMG8833 infrared array on Orange PI 5 (Plus mod
 	/vscode-markdown-toc-config -->
 <!-- /vscode-markdown-toc -->
 
-##  2. <a name='HardwareConfiguration'></a>Hardware Configuration
+##  2. <a name='hardware'></a>Hardware Configuration
 
-###  2.1. <a name='WiringDiagram'></a>Wiring Diagram
+###  2.1. <a name='diagram'></a>Wiring Diagram
 
 ####  2.1.1. <a name='i2c'></a>i2c
 
@@ -38,21 +38,21 @@ Using the `40 Pin Expansion Interface Pin Instructions`, we have multiple i2c **
 </details>
 
 
-####  2.1.2. <a name='PowerSupply'></a>Power Supply
+####  2.1.2. <a name='power'></a>Power Supply
 
 The AMG8833 is powered by 5V pin on the OrangePI 5 board and we decided to use GND pin on the side of the `I2C2_SDA_M4` because the pins on the circled by dot line on the image on the section bellow is used by calor fan.
 
-####  2.1.3. <a name='Diagram'></a>Diagram
+####  2.1.3. <a name='diagram'></a>Diagram
 
 The bellow image contains the connections of the OrangePI 5 Plus and AMG8833 used by the project:
 
 ![OrangePI 5 Plus and AMG8833 Diagram](./.github/hardware.png)
 
-##  3. <a name='SoftwareConfiguration'></a>Software Configuration
+##  3. <a name='software'></a>Software Configuration
 
 On the scripts we need to change the bus number configuration to get access to the AMG8833 i2c protocol interface.
 
-###  3.1. <a name='BusNumber'></a>Bus Number
+###  3.1. <a name='bus'></a>Bus Number
 
 When we create the `AMG8833()` instance, like on the `IR_cam_test.py` script, we can pass the `bus_num` argument:
 
@@ -99,16 +99,16 @@ Making a parallel on the `i2cdetect` configuration above, we have a table of `bu
 
 > Remember that is necessary to open the i2c buses on the linux system (see page 225 on the OrangePI 5 Plus User Manual).
 
-##  4. <a name='SoftwareOutput'></a>Software Output
+##  4. <a name='output'></a>Software Output
 
-###  4.1. <a name='ExampleOutput'></a>Example Output
+###  4.1. <a name='example'></a>Example Output
 
 The following plot is outputted by the example script:
  - /examples/IR_cam_test.py
 
 ![AMG8833 Plot Test](./.github/AMG8833_IR_cam_test.png)
 
-###  4.2. <a name='Real-TimeInterpolatedIRCamera'></a>Real-Time Interpolated IR Camera
+###  4.2. <a name='interpolated'></a>Real-Time Interpolated IR Camera
 
 The following plot is outputted by the example script:
  - /examples/IR_cam_interp.py
