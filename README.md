@@ -97,6 +97,8 @@ Making a parallel on the `i2cdetect` configuration above, we have a table of `bu
 | I2C5_M3 | 5       |
 | I2C8_M2 | 8       |
 
+> Remember that is necessary to open the i2c buses on the linux system (see page 225 on the OrangePI 5 Plus User Manual).
+
 ##  4. <a name='SoftwareOutput'></a>Software Output
 
 ###  4.1. <a name='ExampleOutput'></a>Example Output
