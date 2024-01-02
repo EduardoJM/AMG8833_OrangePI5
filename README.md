@@ -11,12 +11,10 @@ This is a documentation of using AMG8833 infrared array on Orange PI 5 (Plus mod
 Using the `40 Pin Expansion Interface Pin Instructions`, we have multiple i2c **SCL/SDA** pin's. We decided to use `I2C2_SCL_M4` and `I2C2_SDA_M4` (`GPIO1_A1` and `GPIO1_A0`) pins on the **Orange PI 5** board pins. See the pinout bellow:
 
 <details>
-  <summary>Click me</summary>
+  <summary>OrangePI 5 Plus Pinout</summary>
 
   ![OrangePI5 Plus Pinout](./.github/pinout.png)
-
 </details>
-
 
 
 #### Power Supply
