@@ -14,7 +14,9 @@ Using the `40 Pin Expansion Interface Pin Instructions`, we have multiple i2c **
     <summary>OrangePI 5 Plus Pinout</summary>
 
     ![Orange Pi 5 Plus](./.github/pinout.png)
+    
 </details>
+
 
 #### Power Supply
 
