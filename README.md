@@ -2,10 +2,10 @@
 
 This is a documentation of using AMG8833 infrared array on Orange PI 5 (Plus model) inspired and full-based on the original documentation and code of using it on Raspberry Pi 4 ([see repository here](https://github.com/makerportal/AMG8833_IR_cam)).
 
-##  1. <a name='TableOfContents'></a>Table Of Contents
+##  1. <a name='toc'></a>Table Of Contents
 
 <!-- vscode-markdown-toc -->
-* 1. [Table Of Contents](#TableOfContents)
+* 1. [Table Of Contents](#toc)
 * 2. [Hardware Configuration](#HardwareConfiguration)
 	* 2.1. [Wiring Diagram](#WiringDiagram)
 		* 2.1.1. [i2c](#i2c)
